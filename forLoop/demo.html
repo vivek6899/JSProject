@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <script>
+   const sqr=()=>{
+    let a = parseInt(document.getElementById("txtno1").value) ;
+            
+
+            let strans = "";
+
+            for(i=2;i<a;i++)
+            {
+              if(a % i ==0){
+                  strans=""+a+" number is not prime";
+                  break;
+              }
+        else if(i==0){
+        strans=""+a+"number is not composite not prime or not prime";
+              }               
+
+              else{
+                  strans = "Entered number is prime"+a+"";
+              }
+            }
+            document.getElementById("spananswer").innerHTML = strans;
+            
+            
+        }
+            </script>
+    <center><h1>Square</h1></center>
+    <div class = "container w-25 p-5">
+        <form name="frm2">
+            <div class="form-row">
+                <div class="col">
+                 Radius<input type="text" id="txtno1" class="form-control" placeholder="No1"/>
+                 </div>
+                 </div>
+                 <br/>
+                 <div class="form-row">
+                   <div class="col">
+                       <button type="button" value="Add" class="btn btn-outline-success" id="btnans" onclick="sqr();">Click Me</button>
+                   </div>
+                </div>
+                <br/>
+                <div class="form-row">
+                   <div class="col">
+                           Ans <span  id="spananswer"></span>           
+               </div>
+ </div>
+ </form>
+ </div>
+ </body></html>
+ 
