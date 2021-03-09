@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script>
+        const hadd=()=>
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno2").value);
+            let c=parseInt(document.getElementById("txtno3").value);
+           let total= document.getElementById("spantotal").innerHTML=a+b+c;
+    
+            if(total<50){
+                document.getElementById("spangrade").innerHTML=("  C");
+            }
+            else if(total>50 && total<100){
+                document.getElementById("spangrade").innerHTML=("  B");
+            }
+            else{
+                document.getElementById("spangrade").innerHTML=("  A");
+            }
+        }       
+        </script>
+        <center>
+            <h1>Students Marks & Grades</h1>
+        </center>
+    
+        <div class="container w-25 p3">
+        <form name="frm1">
+            <div class="form-row">
+                <div class="col">
+                 Maths<input type="text" id="txtno1" class="form-control" placeholder="Maths"/>
+                
+                 Hindi<input type="text" id="txtno2" class="form-control" placeholder="Hindi"/>
+                 Social Science<input type="text" id="txtno3" class="form-control" placeholder="Social Science"/>
+                 
+                </div>
+            </div>
+            <br/>
+              <div class="form-row">
+                <div class="col">
+                    <button type="button" value="Add" class="btn btn-info" id="btnans" onclick="hadd();">Click Me</button>
+                </div>
+             </div>
+             <br/>
+             <div class="form-row">
+                <div class="col">
+                        Total=<span  id="spantotal"></span>  <br/>
+                        Grade :--<span  id="spangrade"></span>         
+            </div>
+           </div>
+        
+        </form>
+        </div>
+    
+</body>
+</html>

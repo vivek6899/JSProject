@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script>
+        const hadd=()=>
+        {
+            let a=parseInt(document.getElementById("txtno1").value);
+    
+            if(a %2==0){
+                document.getElementById("spananswer").innerHTML=("  Entered Number Is Even :-->"+a);
+            }
+            else{
+                document.getElementById("spananswer").innerHTML=("  Entered Number Is Odd :-->"+a);
+            }
+        }       
+        </script>
+        <center>
+            <h1>Odd Or Even Number</h1>
+        </center>
+    
+        <div class="container w-25 p3">
+        <form name="frm1">
+            <div class="form-row">
+                <div class="col">
+                 No<input type="text" id="txtno1" class="form-control" placeholder="No"/>
+                </div>
+            </div>
+            <br/>
+              <div class="form-row">
+                <div class="col">
+                    <button type="button" value="Add" class="btn btn-outline-secondary" id="btnans" onclick="hadd();">Click Me</button>
+                </div>
+             </div>
+             <br/>
+             <div class="form-row">
+                <div class="col">
+                        Answer<span  id="spananswer"></span>           
+            </div>
+           </div>
+        
+        </form>
+        </div>
+    
+</body>
+</html>

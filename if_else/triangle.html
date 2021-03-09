@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+<body>
+    <script>
+    const hadd=()=>
+    {
+        let a=parseInt(document.getElementById("txtno1").value);
+        let b=parseInt(document.getElementById("txtno2").value);
+
+        document.getElementById("spananswer").innerHTML=a*b*0.5;
+    }       
+    </script>
+    <center>
+        <h1>Area of Triangle</h1>
+    </center>
+
+    <div class="container w-25 p3">
+    <form name="frm1">
+        <div class="form-row">
+            <div class="col">
+             Height<input type="text" id="txtno1" class="form-control" placeholder="No1"/>
+            
+             Base<input type="text" id="txtno2" class="form-control" placeholder="No2"/>
+            </div>
+        </div>
+        <br/>
+          <div class="form-row">
+            <div class="col">
+                <button type="button" value="Add" class="btn btn-info" id="btnans" onclick="hadd();">Click Me</button>
+            </div>
+         </div>
+         <br/>
+         <div class="form-row">
+            <div class="col">
+                    Ans <span  id="spananswer"></span>           
+        </div>
+       </div>
+    
+    </form>
+    </div>
+
+</body>
+</html>

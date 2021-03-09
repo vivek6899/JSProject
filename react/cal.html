@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+  <script>
+
+    function hadd()
+    {
+        let a= parseInt(document.getElementById("txtno1").value);
+        let b=parseInt(document.getElementById("txtno2").value);
+        //alert("hello");
+        document.getElementById("divanswer").innerHTML=a+b;
+        
+
+    }
+
+
+    function hsub()
+    {
+        let a= parseInt(document.getElementById("txtno1").value);
+        let b=parseInt(document.getElementById("txtno2").value);
+        document.getElementById("divanswer").innerHTML=a-b;
+        
+
+    }
+
+    function hmul()
+    {
+        let a= parseInt(document.getElementById("txtno1").value);
+        let b=parseInt(document.getElementById("txtno2").value);
+        document.getElementById("divanswer").innerHTML=a*b;
+        
+
+    }
+
+
+    function hdiv()
+    {
+        let a= parseInt(document.getElementById("txtno1").value);
+        let b=parseInt(document.getElementById("txtno2").value);
+        document.getElementById("divanswer").innerHTML=a/b;
+        
+
+    }
+      
+  </script> 
+
+  <div class="container w-25 p-5">
+    <form>
+     
+      <div class="form-group">
+          <center><h1>Calculator</h1></center><br>
+          <label for="no1">Enter number:</label>
+          <input type="text" class="form-control" placeholder="Enter number" id="txtno1">
+        </div>
+     
+        <div class="form-group">
+          <label for="no2">Enter number2:</label>
+          <input type="text" class="form-control" placeholder="Enter number2" id="txtno2">
+        </div>
+       
+        
+        <div class="form-check-inline">  
+          <br> 
+           <input type="button" class="btn-success" id="btnplus" value="+" name="btnplus" onclick="hadd();">
+       </div>
+     
+       <div class="form-check-inline" ><br>
+         <input type="button" class="btn-success" id="btnsub" value="-" name="btnsub" onclick="hsub();">
+     </div>
+     
+     <div class="form-check-inline">
+     <input type="button" class="btn-success" id="btnmul" value="*" name="btnmul" onclick="hmul();">
+   </div>
+
+   <div class="form-check-inline">  
+     <input type="button" class="btn-success" id="btndiv" value="/" name="btndiv" onclick="hdiv();">
+ </div>
+
+ <div class="form-group">
+  <b><label for="no3">Result:</label></b>
+  <div id="divanswer"></div>
+</div> </form>
+  
+</body>
+</html>
