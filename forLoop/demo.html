@@ -13,50 +13,43 @@
 <body>
     
     <script>
-   const sqr=()=>{
-    let a = parseInt(document.getElementById("txtno1").value) ;
-            
-
-            let strans = "";
-
-            for(i=2;i<a;i++)
-            {
-              if(a % i ==0){
-                  strans=""+a+" number is not prime";
-                  break;
-              }
-        else if(i==0){
-        strans=""+a+"number is not composite not prime or not prime";
-              }               
-
-              else{
-                  strans = "Entered number is prime"+a+"";
-              }
-            }
-            document.getElementById("spananswer").innerHTML = strans;
-            
-            
-        }
+   const addvalue=()=>{
+//let a=document.getElementById("t1").value;
+   //       alert(a);
+   let b=document.getElementById("r1").value;
+   alert(b);
+   }
             </script>
-    <center><h1>Square</h1></center>
+    
     <div class = "container w-25 p-5">
         <form name="frm2">
             <div class="form-row">
-                <div class="col">
-                 Radius<input type="text" id="txtno1" class="form-control" placeholder="No1"/>
+               <div class="col"> 
+              
+                <h1>Radio</h1>
+                <input type="text" class="form-control" name="txt1" id="t1"/>
+                <div class="form-row">
+                                  
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" id="r1" name="r1" value="square">
+                          <label for="square">Square</label><br>
+                          <input type="radio" id="r1" name="r1" value="cube">
+                          <label for="cube">Cube</label><br> 
+                        </label>
+                      </div>     
                  </div>
+               
                  </div>
                  <br/>
                  <div class="form-row">
                    <div class="col">
-                       <button type="button" value="Add" class="btn btn-outline-success" id="btnans" onclick="sqr();">Click Me</button>
+                       <button type="button" value="Add" class="btn btn-outline-success" id="btnans" onclick="addvalue();" >Click Me</button>
+                       <input type="text" name="txt2" id="t2"/>
                    </div>
                 </div>
                 <br/>
-                <div class="form-row">
-                   <div class="col">
-                           Ans <span  id="spananswer"></span>           
-               </div>
+               
  </div>
  </form>
  </div>
