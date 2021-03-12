@@ -13,15 +13,19 @@
 <body>
     
     <script>
+        setTimeout(function() {
+  location.reload();
+}, 10000);
         const addvalue=()=>{
         var a=document.getElementById('t1').value;
         var radio = document.getElementById('r1').value;
-        
+   
         if(document.getElementById('r1').checked){
                 if(radio=="Square") { 
                     document.getElementById('spanans').innerHTML=a*a;   
                 }
                 else{                    
+                    
                     document.getElementById('spanans').innerHTML=a*a*a;
                 }        
         }
