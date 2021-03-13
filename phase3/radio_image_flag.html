@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+    <script>
+        const ind=()=>{
+                       
+           document.getElementById('img1').src="E:/Git_clone/JSProject/phase3/image/ind.jpg";
+           document.getElementById("img1").style.visibility="visible";
+           
+        }
+        const can=()=>{
+            document.getElementById('img1').src="E:/Git_clone/JSProject/phase3/image/Canada.jpg";
+            document.getElementById("img1").style.visibility="visible";
+        }
+        const amer=()=>{
+            document.getElementById('img1').src="E:/Git_clone/JSProject/phase3/image/America.jpg";
+            document.getElementById("img1").style.visibility="visible";
+        }
+        const engl=()=>{
+            document.getElementById('img1').src="E:/Git_clone/JSProject/phase3/image/England.png";
+            document.getElementById("img1").style.visibility="visible";
+        }
+        document.body.append(Radio.value + ' ');
+    </script>
+</head>
+<body><div class="container w-50 p-5">
+    <form>
+      <form name="form2">
+            <div class="form-row"><h1>Radio Image</h1>
+                
+                 </div>
+    <div class="form-group">
+        
+        <div class="form-row">
+                   <div class="col">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" id="r1" name="r1" onclick="ind();">
+                          
+                          <label for="add">India</label><br>
+                          <input type="radio" id="r2" name="r1" value="Canada" onclick="can();">
+                          <label for="sub">Canada</label><br>
+                          <input type="radio" id="r3" name="r1" value="America" onclick="amer();">
+                          <label for="mul">America</label><br>
+                          <input type="radio" id="r4" name="r1" value="England" onclick="engl();">
+                          <label for="div">England</label><br> 
+                        </label>
+                           
+                 </div>
+                      
+                   </div>
+                </div><br/>
+        
+    
+    <div class="form-row">
+        <div class="col">
+                Ans. <span id="spananswer"></span>           
+    </div>
+
+    <div class="form-row">
+        <img id="img1" src="" width="150px" height="150px" style="visibility:hidden" />
+  </div>
+      <br></form>
+    </div>
+</body>
+</html>

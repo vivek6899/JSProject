@@ -13,13 +13,13 @@
 <body>
     <script>
         const demo=()=>{
-            var x = document.getElementById("cmbox").value;
+            var x = document.getElementById("r1").value;
             //alert(s);
             alert(x.length);
-    var i;
-   for (i = 0; i < x.length; i++) {
-        {
-           alert(x[i].value);
+            var i;
+                 for (i = 0; i < x.length; i++) {
+                    {
+                       // alert(x[i].value);
 
            if(x[i].checked==true)
            {
@@ -38,19 +38,26 @@
         <form name="form2">
             <div class="form-row">
                 <div class="col">
-                 Enter Number<input type="text" id="txtno1" class="form-control"/>
+                 Enter Number:<input type="text" id="txtno1" class="form-control"/>
                  </div>
                  </div>
                  <br/>
                  <div class="form-row">
                    <div class="col">
-                       <select id="cmbox" name="cmboxx">
-                           <option value="select">Select</option>
-                           <option value="Playing">Playing</option>
-                           <option value="Singing">Singing</option>
-                           <option value="Coding">Coding</option>
-                           <option value="Dancing">Dancing</option>
-                       </select>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" id="r1" name="r1" value="Playing">
+                          <label for="Playing">Playing</label><br>
+                          <input type="radio" id="r1" name="r1" value="Singing">
+                          <label for="Singing">Singing</label><br>
+                          <input type="radio" id="r1" name="r1" value="Coding">
+                          <label for="Coding">Coding</label><br>
+                          <input type="radio" id="r1" name="r1" value="Dancing">
+                          <label for="Dancing">Dancing</label><br> 
+                        </label>
+                           
+                 </div>
+                      
                    </div>
                 </div><br/>
                 <div class="form-row">

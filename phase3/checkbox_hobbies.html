@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+    <script>
+        const demo=()=> {
+            alert("hi");
+            var markedCheckbox = document.getElementsByName('cbox');  
+  for (var checkbox of markedCheckbox) {  
+    if (checkbox.checked)  
+      document.body.append(checkbox.value + ' ');  
+  }  
+       // document.getElementById('spanans').innerHTML=markedCheckbox;
+//}
+}
+    </script>
+</head>
+<body><div class="container w-50 p-5">
+    <form>
+    <div class="form-group">
+        <h1>hobbies</h1>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="cbox" value="Playing">Playing
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="cbox" value="Coding">Coding
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="cbox" value="Reading">Reading
+          </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" name="cbox" value="Listening Songs">Listening Songs
+            </label>
+          </div>
+          <div class="form-row">
+            
+      </div>
+      <div class="col">
+        <button type="button" value="Add" class="btn btn-outline-success" id="btnans" onclick="demo();">Click Me</button>
+    </div>
+    </div>
+      <br></form>
+    </div>
+</body>
+</html>
