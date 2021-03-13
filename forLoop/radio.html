@@ -15,17 +15,17 @@
     <script>
         const addvalue=()=>{
         var a=document.getElementById('t1').value;
-        var radio = document.getElementById('r1').value;
+//        var radio = document.getElementById('r1').value;
         
-        if(document.getElementById('r1').checked){
-                if(radio=="Square") { 
+       
+                if(document.getElementById("r1").checked==true){ 
                     document.getElementById('spanans').innerHTML=a*a;   
                 }
                 else{                    
                     document.getElementById('spanans').innerHTML=a*a*a;
                 }        
         }
-   }
+   
             </script>
     <div class = "container w-25 p-5">
         <form name="form">
@@ -38,7 +38,7 @@
                         <label class="form-check-label">
                           <input type="radio" id="r1" name="r1" value="Square">
                           <label for="square">Square</label><br>
-                          <input type="radio" id="r1" name="r1" value="Cube">
+                          <input type="radio" id="r" name="r1" value="Cube">
                           <label for="cube">Cube</label><br> 
                         </label>
                            
