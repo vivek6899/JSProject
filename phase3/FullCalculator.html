@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <body style="background-color:powderblue;">
+    <form class="calculator" name="calc" >
+        <input class="value" type="text" name="txtbox" id="txt1" readonly="" />
+        <span class="num" onclick="document.calc.txtbox.value +='%'" >%</span>
+        <span class="num clear" onclick="document.calc.txtbox.value +='CE'" >ce</span>
+        <span class="num" onclick="document.calc.txtbox.value +='c'" >c</span>
+        <span class="num" onclick="document.calc.txtbox.value +='bspace'" >bspace</span>
+        <span class="num" onclick="document.calc.txtbox.value +='1/x'" >1/x</span>
+        <span class="num" onclick="document.calc.txtbox.value +='x^2'" >x^2</span>
+        <span class="num" onclick="document.calc.txtbox.value +='sqRoot'" >sqRoot</span>
+        <span class="num" onclick="document.calc.txtbox.value +='/'" >/</span>
+        <span class="num" onclick="document.calc.txtbox.value +='7'" >7</span>
+        <span class="num" onclick="document.calc.txtbox.value +='8'" >8</span>
+        <span class="num" onclick="document.calc.txtbox.value +='9'" >9</span>
+        <span class="num" onclick="document.calc.txtbox.value +='*'" >*</span>
+        <span class="num" onclick="document.calc.txtbox.value +='4'" >4</span>
+        <span class="num" onclick="document.calc.txtbox.value +='5'" >5</span>
+        <span class="num" onclick="document.calc.txtbox.value +='6'" >6</span>
+        <span class="num" onclick="document.calc.txtbox.value +='-'" >-</span>
+        <span class="num" onclick="document.calc.txtbox.value +='1'" >1</span>
+        <span class="num" onclick="document.calc.txtbox.value +='2'" >2</span>
+        <span class="num" onclick="document.calc.txtbox.value +='3'" >3</span>
+        <span class="num" onclick="document.calc.txtbox.value +='+'" >+</span>
+        <span class="num plus" onclick="document.calc.txtbox.value +='+/-'" >+/-</span>
+        <span class="num" onclick="document.calc.txtbox.value +='0'" >0</span>
+        <span class="num" onclick="document.calc.txtbox.value +='.'" >.</span>
+        <span class="num equal" onclick="document.calc.txtbox.value=eval(calc.txtbox.value) " >=</span>
+        
+        
+                
+
+        
+    </form>
+</body>
+</html>
