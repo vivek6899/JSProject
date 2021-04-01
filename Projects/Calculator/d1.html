@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <script>
+
+    const numbers=(x)=>{
+//alert(x);
+
+            var no=document.getElementById("txt1").value;
+
+            document.getElementById("txt1").value = no +x ;
+
+    }
+    const oneByX=()=>{
+        var no=document.getElementById("txt1").value;
+        document.getElementById("txt1").value =1/no;
+            }
+    const square=()=>{
+        var no=document.getElementById("txt1").value;
+        document.getElementById("txt1").value =no*no;
+            }
+    
+     
+                
+
+    </script>
+
+</head>
+<body>
+    <h1>calculator</h1>
+    <body style="background-color:powderblue;">
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name="txt1" id="txt1" readonly="" />
+        <span class="num" id="mod"onclick="">%</span>
+        <span class="num" id="clr" onclick="">ce</span>
+        <span class="num" id="clear" onclick="">c</span>
+        <span class="num"id="bspace"onclick="">bspace</span>
+        <span class="num" id="oneByX"onclick="oneByX();">1/x</span>
+        <span class="num" id="xsquare" onclick="square();">x^2</span>
+        <span class="num" id="sqRoot" onclick="sqrRoot();">sqRoot</span>
+        <span class="num" id="div" onclick="">/</span>
+        <span class="num" id="no7" onclick="numbers(7);">7</span>
+        <span class="num"id="no8" onclick="numbers(8);" >8</span>
+        <span class="num" id="no9" onclick="numbers(9);">9</span>
+        <span class="num" id="mul" onclick="">*</span>
+        <span class="num" id="no4" onclick="numbers(4);">4</span>
+        <span class="num" id="no5" onclick="numbers(5);">5</span>
+        <span class="num"id="no6"  onclick="numbers(6);">6</span>
+        <span class="num" id="sub" onclick="" >-</span>
+        <span class="num" id="no1"  onclick="numbers(1);">1</span>
+        <span class="num" id="no2" onclick="numbers(2);">2</span>
+        <span class="num" id="no3" onclick="numbers(3);">3</span>
+        <span class="num" id="add" onclick="">+</span>
+        <span class="num " id="positive" onclick="">+/-</span>
+        <span class="num"id="zero" onclick="numbers(0);">0</span>
+        <span class="num"id="point" onclick="" >.</span>
+        <span class="num "id="equal" onclick="">=</span>
+    </form>
+</body>
+</html>
