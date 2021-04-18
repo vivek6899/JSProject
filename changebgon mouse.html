@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function pressed()
+{
+document.body.style.backgroundColor = "blue";
+}
+function released()
+{
+document.body.style.backgroundColor = "green";
+}
+</script>
+</head>
+
+<body>
+<button id="btn1" onmousedown="pressed()" onmouseup="released()">Click me</button>
+<p>Click to change bgcolor</p>
+</body>
+</html>

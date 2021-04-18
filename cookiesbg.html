@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>  const setcolor=()=>{
+    var selectedColor=document.getElementById("bkcolor").value;
+    if((selectedColor != "selectedColor" && document.myform.uname.value !=""))
+    {
+        document.bgColor=selectedColor; //color logic is here
+      //  document.cookie="color="+ selectedColor + ";expires=Fri,5 April 2021 01:00:00 UTC;";
+       // cookievalue = escape(document.myform.uname.value) + ";";
+       //document.cookie = "uname=" + cookievalue;
+       document.write ("Setting Cookies : " + "uname=" + cookievalue +" " +"bgcolor= "+ selectedColor);
+       
+       
+       //document.write ("Setting Cookies : " + "bgColor=" + selectedColor );
+    }}
+    </script>
+<body>
+    
+    <h1>Hello</h1>
+</body>
+</html>

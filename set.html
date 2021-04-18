@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+</head>  
+<body>  
+    <form action="get.html">
+    Name: <input type="text" id="name"><br>  
+    <select name="" id="color" onchange="display()">
+        <option value="Select Color">Select Color</option>
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+    </select><br/>
+    <button class="btn-success" id="btn">Save</button>
+</form>
+    <script>
+       /** function color(){
+            document.getElementById("color").value;
+            if (value != "Select Color")  
+        {  
+            document.bgColor = value; 
+        }
+
+    }**/
+    function display()  
+    {  
+        var value =" bg color = "+ document.getElementById("color").value;
+        var user =" Name = "+ document.getElementById("name").value;  
+        if (value != "Select Color" && user !=" ")  
+        {  
+            document.bgColor = value;  
+           document.cookie = user + value;  
+        }  
+    }  
+    /**window.onload = function ()  
+    {  
+        if (document.cookie.length != 0)  
+        {  
+            var array = document.cookie.split("=");  
+            document.getElementById("color").value = array[1];  
+            document.bgColor = array[1];  
+        }  
+    }  **/
+</script>
+</form>
+</body>  
+</html>

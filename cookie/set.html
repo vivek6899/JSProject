@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input type="text" id="name"><br>  
+    <select id="color" onchange="display()">  
+        <option value="Select Color">Select Color</option>  
+        <option value="yellow">Yellow</option>  
+        <option value="green">Green</option>  
+        <option value="red">Red</option>  
+    </select>  
+<br>  
+<input type="button" value="Set Cookie" onclick="display()">  
+<a href="get.html">next</a>
+
+<script>
+  /**   function setCookie()  
+    {  
+
+        var info=" Name="+ document.getElementById("name").value;
+        document.cookie=info ; 
+         
+        
+    }  **/
+
+function display()  
+                {  
+                    var info=" Name="+ document.getElementById("name").value;
+                    document.cookie=info ;
+                    var value = document.getElementById("color").value;  
+                    
+                   // alert(info);
+                    
+
+                    if (value != "Select Color")  
+                    {  
+                        document.bgColor = value;  
+                     //   alert(value);
+                        document.cookie = "color=" + value;  
+                    }   
+                }  
+</script>
+</body>
+</html>

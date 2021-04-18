@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+    <input type="button" value="Click Me" onmouseup="getMouseClickCode(event)" />
+    <input type="button" value="Clear" onclick="clearText()" />
+    <br/>
+    <br/>
+    <textarea id="txtArea" rows="6" cols="10"></textarea><br/>
+    
+</form>
+<button onclick="myFunction()">no of element</button>
+
+<p id="demo"> No of Element</p>
+
+
+    <script>
+
+function myFunction() {
+  var x = document.getElementById("myForm").elements.length;
+  document.getElementById("demo").innerHTML = "Found " + x + " elements in the form.";
+}
+      
+        function clearText() 
+        {
+            document.getElementById("txtArea").value = "";
+        }
+    
+        function getMouseClickCode(event) 
+        {
+            if (event.which) 
+            {
+                document.getElementById("txtArea").value += "event.which = " + event.which + "\r\n";
+                
+            }
+            else 
+            {
+                document.getElementById("txtArea").value += "event.button = " + event.button + "\r\n";
+            }
+            
+        }
+    
+        document.oncontextmenu = disableRightClick;
+    
+        function disableRightClick(event) 
+        {
+            event = event || window.event;
+    
+            if (event.preventDefault) 
+            {
+                event.preventDefault();
+            }
+            else 
+            {
+                event.returnValue = false
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

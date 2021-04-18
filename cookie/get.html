@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function getCookie()  
+    {  
+        var a=document.cookie;
+        var b=a.split(";");
+        
+        
+        let col1=b[0];
+        let col2=b[1];
+
+        document.bgColor=col2;
+        
+        alert(col1);
+        alert(col2);        
+
+        //alert(b);
+        
+        if(document.cookie.length!=0)  
+        {  
+       //Invoking key-value pair stored in a cookie 
+     //  document.cookie.split('');
+//       let cookies= document.cookie.split(';');
+      
+       
+      alert(cookies); 
+            //google how to split string by ;
+            //name=str[0];
+
+            //name
+    //alert(name);
+    //alert(color);
+
+      // document.body.style.backgroundColor=cookies;
+         
+        }  
+        else  
+        {  
+        alert("Cookie not available")  
+        }  
+    }  
+   
+    
+    </script>
+    <input type="button" value="Get Cookie" onclick="getCookie()">
+   
+   
+   </body>
+</html>
