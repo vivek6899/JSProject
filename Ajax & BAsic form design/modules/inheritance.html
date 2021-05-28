@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                   class student{
+                        constructor(name,no){
+                            this.name=name;
+                            this.no=no;
+                            }
+                            printstudent(){
+                            document.writeln(`No = ${this.no} Name = ${this.name} <br>`);
+                            }
+                        }
+            
+        class marks extends student{
+                constructor(name,no,english,hindi){
+                    super(name,no)
+                    this.english=english;
+                    this.hindi=hindi;
+                    }
+                    printmarks(){
+                    document.writeln(`No = ${this.english} Name = ${this.hindi} <br>`);
+                    }
+                }
+        class result extends marks{
+                 constructor(name,no,english,hindi){
+                     super(name,no,english,hindi)
+                     this.result=0;
+                 }
+                 printresult(){
+                    this.total=this.hindi+ this.english;
+                    document.writeln(`Total = ${this.total} <br>`);
+                    }
+             }
+          let r1=new result("ram",32,40,45);
+                r1.printstudent();
+                r1.printmarks();
+                r1.printresult();
+    </script>
+
+        
+</body>
+</html>

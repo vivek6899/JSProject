@@ -1,0 +1,79 @@
+[
+     {
+      "Rollno": "11",
+      "name": "Shyam",
+      "std": "5",
+      "gender": "Male",
+      "Fees": "5000"
+    },
+    {
+      "Rollno": "12",
+      "name": "Ram",
+      "std": "5",
+      "gender": "Male",
+      "Fees": "5000"
+    },
+    {
+      "Rollno": "13",
+      "name": "Riya",
+      "std": "5",
+      "gender": "Female",
+      "Fees": "5000"
+    },
+    {
+      "Rollno": "14",
+      "name": "Anjali",
+      "std": "5",
+      "gender": "Female",
+      "Fees": "5000"
+    },
+    {
+      "Rollno": "15",
+      "name": "Simran",
+      "std": "7",
+      "gender": "Female",
+      "Fees": "5000"
+    },
+    {
+      "Rollno": "16",
+      "name": "Raj",
+      "std": "7",
+      "gender": "Male",
+      "Fees": "7000"
+    },
+    {
+      "Rollno": "17",
+      "name": "Rahul",
+      "std": "7",
+      "gender": "Male",
+      "Fees": "7000"
+    },
+    {
+      "Rollno": "18",
+      "name": "Lalit",
+      "std": "8",
+      "gender": "Male",
+      "Fees": "8000"
+    },
+    {
+      "Rollno": "19",
+      "name": "Devi",
+      "std": "8",
+      "gender": "Female",
+      "Fees": "8000"
+    },
+    {
+      "Rollno": "20",
+      "name": "Jayul",
+      "std": "8",
+      "gender": "Male",
+      "Fees": "8000"
+    },
+    {
+      "Rollno": "21",
+      "name": "Yash",
+      "std": "8",
+      "gender": "Male",
+      "Fees": "8000"
+    }
+  ]

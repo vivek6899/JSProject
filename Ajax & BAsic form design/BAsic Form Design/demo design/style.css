@@ -1,0 +1,38 @@
+.head {
+	width: auto;
+	height: 100px;
+	
+	background-color: orange;
+}
+.menu{
+	width: auto;
+	height: auto;
+	background-color:white ;
+}
+.images{
+	width: 672px;
+	height: 380px;
+	background-image: url(images/img1.jpg);
+}
+.contain{
+	width: auto;
+	height: 500px;
+	background-color: cornflowerblue;
+}
+.footer{
+	text-align: center;
+	font-size: 20px;
+
+	width: auto;
+	height: 50px;
+	background-color: orange;	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+	display: inline;
+}

@@ -1,0 +1,149 @@
+body{
+	background-color: gainsboro;
+}
+.head{
+	margin-left: 40px;
+	margin-top: 50px;
+	float: left;
+}
+
+.head h1{
+		font-weight: bold;
+		font-family: sans-serif;
+}
+.head h4{
+		font-weight: bold;
+		font-family: sans-serif;
+}
+
+.menu{
+	margin-top: 105px;
+	width: auto;
+	height: 3px;
+	float: left;
+	background-color: transparent;
+	margin-left: 15px;
+}
+.menu ul{
+			margin: 0;
+			padding: 0;
+			line-height: 30px;
+
+}
+.menu ul li{
+			text-decoration : none;
+			float: left;
+}
+.menu li{
+			width: 150px;
+			height: 30px;
+			/*border: 1px solid red;*/
+			text-align: center;
+			float: left;
+			display: block;
+			
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.menu ul li ul {
+			visibility: hidden;
+}
+.menu ul li:hover ul{
+		visibility: visible;
+}
+.menu ul li ul li {
+	/*popup menu effect*/
+}
+.menu ul li ul li a:hover{
+	background-color: transparent;
+	color: red;
+}
+.menu ul li a:hover{
+	color: red;
+}
+#active a{
+	color: red;
+}
+
+.images{
+	float: left;
+}
+.images img {
+	width:350px;
+	height: 350px;
+	margin-top: 250px;
+	margin-left: -900px; 
+  	border-radius: 50%;
+}
+.content{
+
+	float: left;
+	margin-top: 150px;
+	margin-left: 20%;
+
+}
+.content h1{
+	font-size: 85px;
+	font-weight: bold;
+	color: darkslategrey;
+}
+.content h3{
+	font-size: 45px;
+	color: darkslategrey;
+}
+.content button{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: none;
+	margin-right: 12px;
+}
+.content #btn1{
+	background-color: crimson;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+}
+.content #btn2{
+	background-color: cornflowerblue;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+}
+.content #btn3{
+	background-color:chocolate;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+}
+.content #btn1:hover{
+	background-color: coral;
+}
+.content #btn2:hover{
+	background-color: mediumturquoise;
+}
+.content #btn3:hover{
+	background-color: lightsalmon;
+}
+.c2{
+	margin-bottom: 100px;
+	margin-top: 25px;
+	float: left;
+	width: 550px;
+}
+.c2 p{
+	font-size: 15px;
+	text-align: justify;
+}
+.footer {
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}

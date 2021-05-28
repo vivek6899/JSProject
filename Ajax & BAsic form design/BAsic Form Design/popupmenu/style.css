@@ -1,0 +1,64 @@
+body{
+		background-color: lightblue;
+}
+h1{
+	padding: 25px;
+	font-size: 40px;
+	font-style: italic;
+	color: maroon;
+}
+.head {
+	width: auto;
+	height: 100px;
+	background-color: white;
+}
+#menu{
+	width: 1024;
+	height: 30px;
+	background-color:blue;
+}
+#menu ul{
+			margin: 0;
+			padding: 0;
+			line-height: 30px;
+
+}
+#menu li{
+			width: 150px;
+			height: 30px;
+		/*	border: 1px solid red;*/
+			text-align: center;
+			float: left;
+			display: block;
+}
+#menu ul li ul {
+			visibility: hidden;
+}
+#menu ul li:hover ul{
+		visibility: visible;
+}
+#menu ul li ul li{
+	background-color: blue;
+}
+#menu ul li ul li:hover{
+	background-color: maroon;
+}
+#menu ul li:hover{
+	background-color:  maroon;
+
+
+}
+
+#menu a 
+{
+	font-family: calibri;
+	font-size: 19px;
+	color: white;
+	text-decoration: none;
+}
+.active{
+	background-color: maroon;
+}
+
+
+
