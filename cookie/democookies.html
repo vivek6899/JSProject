@@ -1,0 +1,28 @@
+<html>
+   <head>   
+      <script>
+         
+            const WriteCookie=()=> {
+           
+            
+             document.cookie ="name="+ document.getElementById("t1").value;
+               
+            }
+            const ReadCookie=()=>{
+                
+                document.getElementById("t2").value=document.cookie;
+               
+            }
+        
+      </script>      
+   </head>
+   
+   <body>      
+     
+         Enter name: <input type = "text" name = "customer" id="t1"/><br/>
+         Get Cookies: <input type = "text" name = "txt2" id="t2"/>
+         <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+         <input type = "button" value = "get Cookie" onclick = "ReadCookie();"/>
+        
+   </body>
+</html>

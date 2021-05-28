@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const WriteCookie=()=>{
+     //cookievalue=document.getElementById("txt").value;
+       // document.cookie = "name=" + cookievalue;
+       document.cookie="name=" +document.getElementById("txt").value;
+        
+
+    }
+    const readCookie=()=>{
+        document.getElementById("txt1").value=document.cookie;
+        //document.write ("Setting Cookies : " + "name=" + cookievalue );
+    }
+</script>
+<body>
+    <form name = "myform" action = "">
+        Enter name: <input type = "text" name = "customer" id="txt"/>
+        <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+        Entered name: <input type = "text" name = "customer" id="txt1"/>
+        <input type = "button" value = "Get Cookie" onclick = "readCookie();"/>
+     </form> 
+
+</body>
+</html>

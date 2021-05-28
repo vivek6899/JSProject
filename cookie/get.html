@@ -11,19 +11,21 @@
          function getCookie()  
     {  
         var a=document.cookie;
+        
         var b=a.split(";");
+        //alert(b);
         
         
         let col1=b[0];
         let col2=b[1];
-
-        document.bgColor=col2;
+        
+        
         
         alert(col1);
-        alert(col2);        
-
-        //alert(b);
-        
+        alert(col2);
+               
+        document.bgColor=col2;
+      
         if(document.cookie.length!=0)  
         {  
        //Invoking key-value pair stored in a cookie 

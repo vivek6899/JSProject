@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  
+}
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+} 
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+}
+
+ .front-face {
+  transform: rotateY(180deg);
+ }
+ .seq{
+    width: 640px;
+  height: 640px;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+ }
+ .sequence{
+    width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 10px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+ }
+
+ .ace{
+    width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+ }
+ 
+ 
+</style>
+<script>
+    
+    let card1=1;
+    
+    
+    const hi1=()=>{
+        
+        if(card1==1)
+        {
+            
+            document.images["ace1"].src="Images/2_of_club.png";
+            document.images["img1"].src="Images/card_reverse.png";
+            card1++;
+            
+        }
+        else{
+            alert("You select wrong card please try again!!!!");
+            
+        }
+       
+        
+    }
+        const hi2=()=>{
+        if(card1==2)
+        {
+            document.images["ace1"].src="Images/3_of_club.png";
+            document.images["img2"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+       
+        
+        }
+        const hi3=()=>{
+            if(card1==3)
+        {
+            document.images["ace1"].src="img/4_of_club.png";
+            document.images["img3"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+    }
+        const hi4=()=>{
+            if(card1==4)
+        {
+            document.images["ace1"].src="img/5_of_club.png";
+            document.images["img4"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+    }
+        const hi5=()=>{
+            if(card1==5)
+        {
+            document.images["ace1"].src="img/6_of_club.png";
+            document.images["img5"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+    }
+        const hi6=()=>{
+            if(card1==6)
+        {
+            document.images["ace1"].src="img/7_of_club.png";
+            document.images["img6"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+    }
+        const hi7=()=>{
+            if(card1==7)
+        {
+            document.images["ace1"].src="Images/8_of_club.png";
+            document.images["img7"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+    }
+        const hi8=()=>{
+            if(card1==8)
+        {
+            document.images["ace1"].src="Images/9_of_club.png";
+            document.images["img8"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+    }
+    
+        const hi9=()=>{
+            if(card1==9)
+        {
+            document.images["ace1"].src="Images/10_of_club.png";
+            document.images["img9"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+        }
+    
+    
+        const hi10=()=>{
+            if(card1==10)
+        {
+            document.images["ace1"].src="Images/jack_of_club.png";
+            document.images["img10"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+        }
+    
+        const hi11=()=>{
+            if(card1==11)
+        {
+            document.images["ace1"].src="Images/queen_of_club.png";
+            document.images["img11"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+        }
+        
+        const hi12=()=>{
+            if(card1==12)
+        {
+            document.images["ace1"].src="Images/king_of_club.png";
+            document.images["img12"].src="Images/card_reverse.png";
+            card1++;
+        }
+        else{
+           alert("You select wrong card please try again!!!!");
+        }
+        }
+    
+    
+
+
+    </script>
+  <body>
+	<section class="seq">
+        <div class="sequence">
+            <img class="ace" src="Images/ace_of_club.png"   id="ace1" width="150px" />
+        </div>
+        </section>
+   
+    <section class="memory-game">
+        
+        <div class="memory-card">
+                <img class="back-face" src="Images/2_of_club.png" alt="front" width="150px" id="img1" name="img1" onclick="hi1();" />
+          
+        </div>
+        <div class="memory-card">
+            <img class="back-face" src="Images/3_of_club.png" alt="front" width="150px" id="img2" name="img2" onclick="hi2();"/>
+      </div>
+
+        <div class="memory-card">
+            <img class="back-face" src="img/4_of_club.png" alt="front" width="150px" id="img3" name="img3" onclick="hi3();" />
+            
+          </div>
+          <div class="memory-card">
+            <img class="back-face" src="img/5_of_club.png" alt="front" width="150px" id="img4"name="img4"  onclick="hi4();"/>
+          </div>
+    
+          <div class="memory-card">
+            <img class="back-face" src="img/6_of_club.png" alt="front" width="150px" id="img5"name="img5" onclick="hi5();"/>
+          </div>
+          <div class="memory-card">
+            <img class="back-face" src="img/7_of_club.png" alt="front" width="150px" id="img6" name="img6" onclick="hi6();"/>
+          </div>
+
+          <div class="memory-card">
+            <img class="back-face" src="img/8_of_club.png" alt="front" width="150px" id="img7" name="img7" onclick="hi7();"/>
+            
+          </div>
+          <div class="memory-card">
+            <img class="back-face" src="img/9_of_club.png" alt="front" width="150px" id="img8" name="img8" onclick="hi8();"/>
+          </div>
+
+          <div class="memory-card">
+            <img class="back-face" src="img/10_of_club.png" alt="front" width="150px"id="img9" name="img9" onclick="hi9();"/>
+          </div>
+          <div class="memory-card">
+            <img class="back-face" src="img/jack_of_club.png" alt="front" width="150px"id="img10" name="img10" onclick="hi10();"/>
+          </div>
+          <div class="memory-card">
+            <img class="back-face" src="img/queen_of_club.png" alt="front" width="150px"id="img11"name="img11" onclick="hi11();"/>
+          </div>
+          <div class="memory-card">
+            <img class="back-face" src="img/king_of_club.png" alt="front" width="150px" id="img12"name="img12"onclick="hi12();"/>
+          </div>
+          
+      </section>
+</body>
+</html>

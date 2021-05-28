@@ -7,21 +7,15 @@
     <title>REGISTRATION</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
-
 <body>
-  
-
-  <div class="container w-50 p-5">
-      <center><h1>REGISTRATION</h1></center>
+   <div class="container w-50 p-5">
+     <h1>REGISTRATION</h1>
     <form>
         <div class="form-group">
-          <label for="fn">First Name:</label>
-          <input type="text" class="form-control" placeholder="Enter First  name" id="fname">
+          <label for="fn">Enter Name</label>
+          <input type="text" class="form-control" required="true" placeholder="Enter First  name" id="fname">
         </div>
-        <div class="form-group">
-            <label for="ln">Last Name:</label>
-            <input type="text" class="form-control" placeholder="Enter Last Name" id="lname">
-          </div>
+      
           <div class="form-group">
             <label for="hobbies">Gender</label>
             <div class="form-check">
@@ -38,12 +32,16 @@
 
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" placeholder="Enter email" id="email">
+            <input type="email" class="form-control" required  placeholder="Enter email" id="email">
           </div>
 
         <div class="form-group">
           <label for="pwd">Password:</label>
           <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Re-enter Password:</label>
+          <input type="password" class="form-control" placeholder="Enter password" id="rpwd">
         </div>
         <br>
         <div class="form-group">

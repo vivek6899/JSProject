@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="hi();">
+    <script>
+        const hi=()=>{
+        let d=new Date();
+        let h=d.getHours();
+        let m=d.getMinutes();        
+        let s=d.getSeconds();
+        let TwentyFourHour = d.getHours();
+        let f="PM";
+
+        if (m < 10) {
+        m = "0" + m;
+            }
+        if (h > 12) {
+        h = h - 12;
+            }    
+        if(h==0){ 
+        h=12;
+        }
+        if(TwentyFourHour < 12) {
+        f = 'AM';
+        }     
+        document.getElementById("ans").value= h +" : "+ m +" : " +s +" "+f;
+       // document.writeln(h +" : "+ m +" : " +s );
+        setInterval("hi();",1000);
+
+        
+            if(f=="AM"&&h>=1&&h<12){
+            alert("Good Morning");
+        }
+       else if(f=="PM"&&h>=12&&h<=3){
+            alert("Good Afternoon");
+        }
+        else if(str="PM"&&h>3&&h<9){
+            alert("Good Evening");
+        }
+        else{
+            alert("Good Night");
+        }
+    
+        }
+       
+       
+           
+           
+            
+
+        
+    </script>
+    <input type="text" id="ans" />
+</body>
+</html>
